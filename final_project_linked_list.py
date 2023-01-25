@@ -19,9 +19,9 @@ class linked_list:
             cur = cur.first
         cur.first = new_node
     
-    def append_second(self,data):
+    def append_second(self,data,char):
         new_node = node(data)
-        cur = self.head
+        cur = char
         while cur.second != None:
             cur = cur.second
         cur.second = new_node
@@ -50,9 +50,9 @@ class linked_list:
                 return cur_node
             cur_node=cur_node.first
         return None
-        
-    def find_in_second(self,key):
-        cur_node = self.head
+
+    def find_in_second(self,key,char):
+        cur_node = char
         while cur_node.second != None:
             if cur_node.data == key:
                 return cur_node
@@ -89,13 +89,18 @@ for i in list(string.ascii_lowercase): #list of alphabet
 counter=0
 for line in file_list2:
     counter+=1
-    for char in line:
-        char=char.lower()
-        key=char[0]
+    for letter in line:
+        letter=letter.lower()
+        key=letter[0]
         target_char=alpha_link.find_in_first(key)
-        letter=node(char)
-
-
+        p= alpha_link.find_in_second(letter,target_char)
+        if p == None:
+            alpha_link.append_second(letter,target_char)
+        else:
+            new_node = node(counter)
+            while p.second != None:
+                p = p.second
+            p.second = new_node
     
 
 
