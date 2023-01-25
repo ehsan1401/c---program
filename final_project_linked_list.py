@@ -1,4 +1,4 @@
-
+import string
 class node:
     def __init__(self, data=None):
         self.data = data
@@ -56,6 +56,11 @@ for i in file_list:
     i = i.replace(",", " ")
     i = i.replace(".", " ")
     file_list2.append(i)
+
+alpha_link=linked_list()
+y=alpha_link.head
+for i in list(string.ascii_lowercase):
+    
 
 
 # file_list3 = []
