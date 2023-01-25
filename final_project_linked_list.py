@@ -22,7 +22,7 @@ class linked_list:
             total += 1
             cur = cur.next
         return total
-        
+
     def display(self):
         elems = []
         cur_node = self.head
@@ -39,7 +39,7 @@ class linked_list:
             if cur_node.data == key:
                 last_node.next = cur_node.next
                 return
-
+                
 file_list= []
 f = open("text.txt", "r")
 for x in f:
