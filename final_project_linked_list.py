@@ -4,10 +4,10 @@ class node:
         self.data = data
         self.first = None
         self.second = None
-class node_1link:
-    def __init__(self, data=None):
-        self.data = data
-        self.next=None
+# class node_1link:
+#     def __init__(self, data=None):
+#         self.data = data
+#         self.next=None
 class linked_list:
     def __init__(self):
         self.head = node()
@@ -49,8 +49,9 @@ class linked_list:
             if cur_node.data == key:
                 return cur_node
             cur_node=cur_node.first
-        return 'ERROR -> not found in alphabet'
-                
+        return None
+    
+    
     def erase(self, key):
         cur_node = self.head
         while cur_node.first != None:
@@ -77,7 +78,7 @@ for i in list(string.ascii_lowercase): #list of alphabet
     y=y.first
 
 
-letter_link=linked_list()
+# letter_link=linked_list()
 counter=0
 for line in file_list2:
     counter+=1
@@ -86,9 +87,6 @@ for line in file_list2:
         key=char[0]
         target_char=alpha_link.find_in_first(key)
         letter=node(char)
-        char_line=node_1link(counter)
-
-        letter.first
 
 
     
