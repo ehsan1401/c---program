@@ -25,6 +25,7 @@ class linked_list:
         while cur.second != None:
             cur = cur.second
         cur.second = new_node
+        return new_node
     
 
     def length(self):
@@ -59,7 +60,13 @@ class linked_list:
             cur_node=cur_node.second
         return None
     
-    
+    def append_first(self,key,data):
+        new_node = node(data)
+        cur_node = key
+        while cur_node.first != None:
+            cur_node = cur_node.first
+        cur_node.first = new_node
+
     def erase(self, key):
         cur_node = self.head
         while cur_node.first != None:
@@ -82,8 +89,8 @@ alpha_link=linked_list()
 y=alpha_link.head
 for i in list(string.ascii_lowercase): #list of alphabet
     y.data=i
+    y.first=node()
     y=y.first
-
 
 # letter_link=linked_list()
 counter=0
@@ -95,13 +102,10 @@ for line in file_list2:
         target_char=alpha_link.find_in_first(key)
         p= alpha_link.find_in_second(letter,target_char)
         if p == None:
-            alpha_link.append_second(letter,target_char)
+            target_letter=alpha_link.append_second(letter,target_char)
+            alpha_link.append_first(target_letter,counter)
         else:
-            new_node = node(counter)
-            while p.second != None:
-                p = p.second
-            p.second = new_node
-    
+            alpha_link.append_first(p,counter)
 
 
 # file_list3 = []
