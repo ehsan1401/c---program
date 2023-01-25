@@ -50,6 +50,14 @@ class linked_list:
                 return cur_node
             cur_node=cur_node.first
         return None
+        
+    def find_in_second(self,key):
+        cur_node = self.head
+        while cur_node.second != None:
+            if cur_node.data == key:
+                return cur_node
+            cur_node=cur_node.second
+        return None
     
     
     def erase(self, key):
@@ -59,8 +67,7 @@ class linked_list:
             cur_node = cur_node.first
             if cur_node.data == key:
                 last_node.first = cur_node.first
-                return
-                
+                return       
 file_list= []
 f = open("text.txt", "r")
 for x in f:
