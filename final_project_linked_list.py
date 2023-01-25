@@ -59,7 +59,17 @@ for i in file_list:
 
 alpha_link=linked_list()
 y=alpha_link.head
-for i in list(string.ascii_lowercase):
+for i in list(string.ascii_lowercase): #list of alphabet
+    y.data=i
+    y=y.first
+
+counter=0
+for line in file_list2:
+    counter+=1
+    for char in line:
+        key=char[0]
+        
+
     
 
 
