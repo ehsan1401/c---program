@@ -1,40 +1,61 @@
-Habitant,sociosqu leo, tempor dolor, tortor quis inceptos eleifend elementum condimentum ad.
-Congue vulputate, et egestas duis. Pulvinar ipsum sapien condimentum, malesuada cras ligula congue torquent.
-Turpis id feugiat erat, iaculis potenti aptent, quis aliquam elementum nunc posuere tempor semper conubia.
-Id ante sociosqu, erat aliquam, tortor ultricies eros pulvinar nulla suscipit sapien. 
-A auctor, potenti taciti nibh.
-Habitant sociosqu leo, tempor dolor, tortor quis inceptos eleifend elementum condimentum ad.
-Congue vulputate, et egestas duis. Pulvinar ipsum sapien condimentum, malesuada cras ligula congue torquent.
-Turpis id feugiat erat, iaculis potenti aptent, quis aliquam elementum nunc posuere tempor semper conubia.
-Id ante sociosqu, erat aliquam, tortor ultricies eros pulvinar nulla suscipit sapien. 
-A auctor, potenti taciti nibh.
-Habitant sociosqu leo, tempor dolor,tortor quis inceptos eleifend,elementum condimentum ad.
-Congue vulputate, et egestas duis. Pulvinar ipsum sapien condimentum, malesuada cras ligula congue torquent.
-Turpis id feugiat erat, iaculis potenti aptent, quis aliquam elementum nunc posuere tempor semper conubia.
-Id ante sociosqu, erat aliquam, tortor ultricies eros pulvinar nulla suscipit sapien. 
-A auctor, potenti taciti nibh.
-Habitant sociosqu leo, tempor dolor, tortor quis inceptos eleifend elementum condimentum ad.
-Congue vulputate, et egestas duis. Pulvinar ipsum sapien condimentum, malesuada cras ligula congue torquent.
-Turpis id feugiat erat, iaculis potenti aptent, quis aliquam elementum nunc posuere tempor semper conubia.
-Id ante sociosqu, erat aliquam, tortor ultricies eros pulvinar nulla suscipit sapien. 
-A auctor, potenti taciti nibh.
-Habitant sociosqu leo, tempor dolor, tortor quis inceptos eleifend elementum condimentum ad.
-Congue vulputate, et egestas duis. Pulvinar ipsum sapien condimentum, malesuada cras ligula congue torquent.
-Turpis id feugiat erat, iaculis potenti aptent, quis aliquam elementum nunc posuere tempor semper conubia.
-Id ante sociosqu, erat aliquam, tortor ultricies eros pulvinar nulla suscipit sapien. 
-A auctor, potenti taciti nibh.
-Habitant sociosqu leo, tempor dolor, tortor quis inceptos eleifend elementum condimentum ad.
-Congue vulputate, et egestas duis. Pulvinar ipsum sapien condimentum, malesuada cras ligula congue torquent.
-Turpis id feugiat erat, iaculis potenti aptent, quis aliquam elementum nunc posuere tempor semper conubia.
-Id ante sociosqu, erat aliquam, tortor ultricies eros pulvinar nulla suscipit sapien. 
-A auctor, potenti taciti nibh.
-Habitant sociosqu leo, tempor dolor, tortor quis inceptos eleifend elementum condimentum ad.
-Congue vulputate, et egestas duis. Pulvinar ipsum sapien condimentum, malesuada cras ligula congue torquent.
-Turpis id feugiat erat, iaculis potenti aptent, quis aliquam elementum nunc posuere tempor semper conubia.
-Id ante sociosqu, erat aliquam, tortor ultricies eros pulvinar nulla suscipit sapien. 
-A auctor, potenti taciti nibh.
-Habitant sociosqu leo, tempor dolor, tortor quis inceptos eleifend elementum condimentum ad.
-Congue vulputate, et egestas duis. Pulvinar ipsum sapien condimentum, malesuada cras ligula congue torquent.
-Turpis id feugiat erat, iaculis potenti aptent, quis aliquam elementum nunc posuere tempor semper conubia.
-Id ante sociosqu, erat aliquam, tortor ultricies eros pulvinar nulla suscipit sapien. 
-A auctor, potenti taciti nibh.
+For broader coverage of this topic, see Bitcoin.
+
+A diagram of a bitcoin transfer
+
+Number of bitcoin transactions per month (logarithmic scale)
+The Bitcoin network is a peer-to-peer network of nodes which implement the Bitcoin protocol. The protocol itself implements a highly available, public, and decentralized ledger. The nodes verify that each update to the ledger follows the rules of the Bitcoin protocol.
+
+Users broadcast cryptographically-signed messages to the network using Bitcoin cryptocurrency wallet software. These messages are proposed transactions, changes to be made in the ledger. Each node has a copy of the ledger's entire transaction history. If a transaction violates the rules of the Bitcoin protocol, it is ignored. Transactions only happen when the full network agrees they should happen. This "full network consensus" is achieved when each node on the network verifies the results of a proof-of-work operation called mining. Mining packages groups of transactions into blocks, and produces a hash code that follows the rules of the Bitcoin protocol. Creating this hash requires expensive energy, but a network node can verify the hash is valid using very little energy. If a miner proposes a block to the network, and its hash is valid, the block and its ledger changes are added to the blockchain, and the network moves on to yet unprocessed transactions. In case there is a dispute, then the longest chain is considered to be correct.
+
+A new block is created every 10 minutes, on average.
+
+Satoshi Nakamoto, the anonymous designer of the protocol, stated that design and coding of Bitcoin began in 2007. The project was released in 2009 as open source software.
+
+The network requires minimal structure to share transactions. An ad hoc decentralized network of volunteers is sufficient. Messages are broadcast on a best-effort basis, and nodes can leave and rejoin the network at will. Upon reconnection, a node downloads and verifies new blocks from other nodes to complete its local copy of the blockchain.[2][3]
+
+Transactions
+
+An actual bitcoin transaction including the fee from a web-based cryptocurrency exchange to a hardware wallet
+
+The best chain   consists of the longest series of transaction records from the genesis block   to the current block or record. Orphaned records   exist outside of the best chain.
+A bitcoin is defined by a sequence of digitally signed transactions that began with the bitcoin's creation, as a block reward. The owner of a bitcoin transfers it by digitally signing it over to the next owner using a bitcoin transaction, much like endorsing a traditional bank check. A payee can examine each previous transaction to verify the chain of ownership. Unlike traditional check endorsements, bitcoin transactions are irreversible, which eliminates risk of chargeback fraud.
+
+Although it is possible to handle bitcoins individually, it would be unwieldy to require a separate transaction for every bitcoin in a transaction. Transactions are therefore allowed to contain multiple inputs and outputs, allowing bitcoins to be split and combined. Common transactions will have either a single input from a larger previous transaction or multiple inputs combining smaller amounts, and one or two outputs: one for the payment, and one returning the change, if any, to the sender. Any difference between the total input and output amounts of a transaction goes to miners as a transaction fee.[2]
+
+Mining
+
+GPU-based mining rig, 2012
+
+A Bitcoin mining farm, 2018
+To form a distributed timestamp server as a peer-to-peer network, bitcoin uses a proof-of-work system.[3] This work is often called bitcoin mining.
+
+During mining, practically the entire computing power of the Bitcoin network is used to solve cryptographic tasks, the proof of work. Their purpose is to ensure that the generation of valid blocks involves a certain amount of effort, so that subsequent modification of the block chain, such as in the 51% attack scenario, can be practically ruled out. Because of the difficulty, miners form "mining pools" to get payouts despite these high power requirements, costly hardware deployments, and/or hardware under their own control. The largest proportion of mining pools are based in China, which is also where most of the miners—or about 75% of the computing power—of the cryptocurrency are based.[4]
+
+Requiring a proof of work to accept a new block to the blockchain was Satoshi Nakamoto's key innovation. The mining process involves identifying a block that, when hashed twice with SHA-256, yields a number smaller than the given difficulty target. While the average work required increases in inverse proportion to the difficulty target, a hash can always be verified by executing a single round of double SHA-256.
+
+For the bitcoin timestamp network, a valid proof of work is found by incrementing a nonce until a value is found that gives the block's hash the required number of leading zero bits. Once the hashing has produced a valid result, the block cannot be changed without redoing the work. As later blocks are chained after it, the work to change the block would include redoing the work for each subsequent block. If there is a deviation in consensus then a blockchain fork can occur.
+
+Majority consensus in bitcoin is represented by the longest chain, which required the greatest amount of effort to produce. If a majority of computing power is controlled by honest nodes, the honest chain will grow fastest and outpace any competing chains. To modify a past block, an attacker would have to redo the proof-of-work of that block and all blocks after it and then surpass the work of the honest nodes. The probability of a slower attacker catching up diminishes exponentially as subsequent blocks are added.[3]
+
+
+Mining difficulty has increased significantly.
+To compensate for increasing hardware speed and varying interest in running nodes over time, the difficulty of finding a valid hash is adjusted roughly every two weeks. If blocks are generated too quickly, the difficulty increases and more hashes are required to make a block and to generate new bitcoins.[3]
+
+Difficulty and mining pools
+Further information: Mining pool
+
+The largest Bitcoin mining pools as of April 2020 by nation in which they are based[clarification needed]
+Bitcoin mining is a competitive endeavor. An "arms race" has been observed through the various hashing technologies that have been used to mine bitcoins: basic central processing units (CPUs), high-end graphics processing units (GPUs), field-programmable gate arrays (FPGAs) and application-specific integrated circuits (ASICs) all have been used, each reducing the profitability of the less-specialized technology. Bitcoin-specific ASICs are now the primary method of mining bitcoin and have surpassed GPU speed by as much as 300-fold. The difficulty within the mining process involves self-adjusting to the network's accumulated mining power. As bitcoins have become more difficult to mine, computer hardware manufacturing companies have seen an increase in sales of high-end ASIC products.[5]
+
+Computing power is often bundled together or "pooled" to reduce variance in miner income. Individual mining rigs often have to wait for long periods to confirm a block of transactions and receive payment. In a pool, all participating miners get paid every time a participating server solves a block. This payment depends on the amount of work an individual miner contributed to help find that block.[6]
+
+Energy sources and consumption
+
+Bitcoin electricity consumption as of 2021[7]
+In 2013, Mark Gimein estimated electricity consumption to be about 40.9 megawatts (982 megawatt-hours a day).[8] In 2014, Hass McCook estimated 80.7 megawatts (80,666 kW). As of 2015, The Economist estimated that even if all miners used modern facilities, the combined electricity consumption would be 166.7 megawatts (1.46 terawatt-hours per year).[9] The Cambridge Bitcoin Electricity Consumption Index estimates the energy use of the bitcoin network grew from 1.95 terawatt-hours per year at the end of 2014, to 77.1 terawatt-hours per year by the end of 2019.[7]
+
+Seeking lower electricity costs, some bitcoin miners have set up in places like Iceland where geothermal energy is cheap and cooling Arctic air is free.[10] Chinese bitcoin miners are known to use hydroelectric power in Tibet to reduce electricity costs.[11] North American companies are utilizing stranded gas as a cost-effective source of energy for bitcoin mining.[12] In West Texas, wind powers bitcoin mining.[13] As of April 2021, at least one-third of Bitcoin mining was powered by coal in China's Xinjiang region.[14]
+
+A 2021 study found that carbon emissions from Bitcoin mining in China—where a majority of the proof-of-work algorithm that generated economic value was computed prior to mid-2021[15]—had accelerated rapidly in the late 2010s, are largely fueled by nonrenewable sources and was expected to exceed total annual emissions of countries like Italy and Spain during 2016, interfering with international climate change mitigation commitments.[16][17] It was also found that in 2021, bitcoin mining consumed more energy than the country of New Zealand.[18] A formal Chinese ban on cryptocurrency mining operations in May 2021—reiterated in both September and November—resulted in the relocation of a large majority of mining equipment away from China. Yet as many as 20 percent of "all the world's bitcoin miners remain in China. This is well off its peak of around 65% to 75% of the global market."[15] By December 2021, the global hashrate had mostly recovered to a level before China's crackdown, with increased shares of the total mining power coming from the U.S. (35.4%), Kazakhstan (18.1%), and Russia (11%) instead.[19]
+
+A 2022 survey[20] on technologies approached cryptocurrencies' technological and environmental issues from many perspectives and noted the plans of using the methods of unconventional computing and grid computing to make bitcoin and ether both greener and more justified.
